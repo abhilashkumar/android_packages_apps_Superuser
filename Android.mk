@@ -6,7 +6,6 @@ LOCAL_MODULE_STEM := su
 LOCAL_SRC_FILES := su.c activity.cpp
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_EXECUTABLES)
-LOCAL_MODULE_TAGS := user
 
 LOCAL_C_INCLUDES += external/sqlite/dist
 LOCAL_SHARED_LIBRARIES := liblog libsqlite libandroid_runtime
@@ -46,8 +45,6 @@ include $(CLEAR_VARS)
 
 LOCAL_PACKAGE_NAME := Superuser
 LOCAL_SRC_FILES := $(call all-java-files-under,src)
-
-LOCAL_MODULE_TAGS := user
 
 LOCAL_CERTIFICATE := platform
 
